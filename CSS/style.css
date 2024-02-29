@@ -24,14 +24,20 @@ main{height: 90vh;}
 .myGrid{
   height: 80vh ;
   aspect-ratio: 1;
-  background-color: aquamarine;
-
-
-
-
-
+  background-image: url("../IMG/boolean-logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: center;
+  
 
 }
+
+img{
+  height: 100%;
+  width: 100%;
+
+}
+
 
 .square{
   height: 8vh;
