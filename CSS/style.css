@@ -10,9 +10,6 @@ body{
 
   height: 100vh;
 
-
-
-
 }
 
 
@@ -40,8 +37,8 @@ img{
 
 
 .square{
-  height: 8vh;
-  width: 8vh;
+  
+  aspect-ratio: 1;
   background-color: brown;
   border: 1px solid white;
   justify-content: center;
@@ -50,4 +47,17 @@ img{
   cursor: pointer;
 
 
+}
+
+.square.easy{
+
+  width: calc(100%/10);
+}
+.square.middle{
+
+  width: calc(100%/9);
+}
+.square.difficult{
+
+  width: calc(100%/7);
 }
