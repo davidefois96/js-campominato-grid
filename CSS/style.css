@@ -1,0 +1,47 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+
+
+}
+
+body{
+
+  height: 100vh;
+
+
+
+
+}
+
+
+header{height: 10vh;}
+
+
+main{height: 90vh;}
+
+.myGrid{
+  height: 80vh ;
+  aspect-ratio: 1;
+  background-color: aquamarine;
+
+
+
+
+
+
+}
+
+.square{
+  height: 8vh;
+  width: 8vh;
+  background-color: brown;
+  border: 1px solid white;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+
+
+}
