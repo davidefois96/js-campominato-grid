@@ -19,19 +19,14 @@ btn.addEventListener('click', function(){
     reset();
 
 
-    if (sel.value==='facile') {
+    if(sel.value==='facile') {
 
       for (let i = 1; i <= 100; i++) {
+
         const box = addInteractiveSquare(i);
     
-        box.classList.add('d-flex');
-        box.classList.add('square');
-        box.classList.add('easy');
-  
-        
-    
-        box.innerHTML= i;
-        
+        box.classList.add('d-flex','square','easy');
+       
         myGrid.append(box);
         
      
@@ -44,12 +39,7 @@ btn.addEventListener('click', function(){
       for (let i = 1; i <= 81; i++) {
         const box = addInteractiveSquare(i);
     
-        box.classList.add('d-flex');
-        box.classList.add('square');
-        box.classList.add('middle');
-  
-    
-        box.innerHTML= i;
+        box.classList.add('d-flex','square','middle');
         
         
         myGrid.append(box);
@@ -61,12 +51,7 @@ btn.addEventListener('click', function(){
       for (let i = 1; i <= 49; i++) {
         const box = addInteractiveSquare(i);
     
-        box.classList.add('d-flex');
-        box.classList.add('square');
-        box.classList.add('difficult');
-  
-    
-        box.innerHTML= i;
+        box.classList.add('d-flex', 'square', 'difficult');
         
         
         myGrid.append(box);
@@ -87,9 +72,9 @@ function addInteractiveSquare(num){
 
   const square= document.createElement('div');
 
-  
-
   square._id= num;
+
+  square.innerHTML= num;
 
   
   square.addEventListener('click', function(){
